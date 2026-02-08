@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: nginx-proxy-manager
-name: Nginx Proxy Manager
+id: nginx-proxy-manager-local
+name: Nginx Proxy Manager Local
 tagline: nginx
 icon: https://icon.icepanel.io/Technology/svg/NGINX.svg
 category: Network
 version: "1.0.0"
-port: 4000
+port: 80
 description: >-
   For the project to work, it is necessary to change the server's default port from 80 to 8080.
 developer: Fernando Soares
