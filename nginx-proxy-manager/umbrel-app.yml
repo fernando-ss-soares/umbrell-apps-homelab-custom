@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: nginx-proxy-manager
+name: Nginx Proxy Manager
+tagline: nginx
+icon: https://icon.icepanel.io/Technology/svg/NGINX.svg
+category: Network
+version: "1.0.0"
+port: 4000
+description: >-
+  For the project to work, it is necessary to change the server's default port from 80 to 8080.
+developer: Fernando Soares
+website: https://umbrel.com
+submitter: Fernando Soares
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

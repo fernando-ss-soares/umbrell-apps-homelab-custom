@@ -1,0 +1,2 @@
+id: "nginx-proxy-manager" # Choose the ID for your app store. This should contain only alphabets ("a to z") and dashes ("-").
+name: "nginx" # Choose the name of your app store. It will show up in the UI as "<name> App Store".
