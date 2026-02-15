@@ -1,22 +1,12 @@
-manifestVersion: 1
-id: nginx-proxy-manager-local
-name: Nginx Proxy Manager Local
-tagline: nginx
-icon: https://icon.icepanel.io/Technology/svg/NGINX.svg
-category: Network
-version: "1.0.0"
-port: 80
-description: >-
-  For the project to work, it is necessary to change the server's default port from 80 to 8080.
-developer: Fernando Soares
-website: https://umbrel.com
-submitter: Fernando Soares
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-releaseNotes: >-
-  Add what's new in the latest version of your app here.
-dependencies: []
-path: ""
-defaultUsername: ""
-defaultPassword: ""
+id: invoiceplane
+name: InvoicePlane
+version: "1.6.1"
+description: Gerenciamento de faturas e orçamentos open-source.
+developer: InvoicePlane
+website: https://invoiceplane.com
+submitter: SeuNome
+repo: https://github.com/invoiceplane/InvoicePlane
+support: https://github.com/invoiceplane/InvoicePlane/issues
+port: 8080
+gallery:
+  - https://invoiceplane.com/content/images/2015/09/invoiceplane-dashboard.png

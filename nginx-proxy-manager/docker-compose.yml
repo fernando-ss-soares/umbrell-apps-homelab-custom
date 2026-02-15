@@ -1,21 +1,29 @@
-version: "3.7"
-
 services:
-  app:
-    image: 'jc21/nginx-proxy-manager:latest'
-    restart: unless-stopped
-    environment:
-      TZ: "Australia/Brisbane"
-      APP_HOST: nginx-proxy-manager-local_nginx
-      APP_PORT: 80
-    ports:
-      - '80:80'
-      - '81:81'
-      - '443:443'
+  invoiceplane-db:
+    image: mariadb:10.6
+    container_name: invoiceplane-db
     volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
+      - invoiceplane-db-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=invoiceplane
+      - MYSQL_USER=ipuser
+      - MYSQL_PASSWORD=ippassword
 
+  invoiceplane-app:
+    image: linuxserver/invoiceplane:latest
+    container_name: invoiceplane-app
+    depends_on:
+      - invoiceplane-db
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./config:/config
+    ports:
+      - 8080:80
+    restart: unless-stopped
 
-
-
+volumes:
+  invoiceplane-db-data:
